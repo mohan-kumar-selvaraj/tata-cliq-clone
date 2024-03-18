@@ -1,0 +1,77 @@
+/* body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+} */
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.main-card {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card {
+  border-radius: 25px;
+}
+
+img {
+  width: 250px;
+  height: 335px;
+  cursor: pointer;
+  margin: 0 10px 0 10px;
+  border-radius: 15px; /* Apply radius to the image as well */
+}
+
+.nav-buttons,
+.deal-button {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 15px;
+}
+input[type="radio"] {
+  display: none;
+}
+.deal-button .one {
+  margin-right: 150px;
+}
+.deal-button .two {
+  margin-right: 2px;
+}
+.deal-button .one .img {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  /* transform: rotate(-180deg); */
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deal-button .two .img {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  transform: rotate(-180deg);
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deal-button .one .img img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.deal-button .two img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

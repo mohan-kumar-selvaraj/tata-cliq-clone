@@ -1,0 +1,59 @@
+/* #myCarousel-indicators {
+  border-radius: 50%;
+  justify-content: flex-end;
+  margin-right: 50px;
+  
+} */
+
+/* .carousel-indicators > button { */
+  /* width: 10px !important;
+  height: 10px !important;
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+  border-radius: 50% !important;
+  border: 0 !important;
+  background-color: transparent !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.7) !important; */
+
+  /* width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: 0 0;
+  float: left;
+  cursor: pointer;
+  transition: 300ms;
+  margin-right: 10px;
+  justify-content: flex-end;
+  background-color: transparent !important; */
+  /* box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 1) !important; */
+/* } */
+
+.carousel-indicators {
+  justify-content: flex-end;
+  margin-right: 50px;
+  z-index: 1;
+}
+/*
+.carousel-control-prev {
+  border: 1px;
+  padding-right: 80px;
+  z-index: 0;
+}
+.carousel-control-next {
+  border: 1px;
+  padding-left: 80px;
+  z-index: 0;
+}
+.carousel-control-next-icon {
+  background-color: #e2dada8e;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+.carousel-control-prev-icon {
+  background-color: #e2dada77;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+} */

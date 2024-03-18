@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Our Team Section | CodingLab</title>
+    <link rel="stylesheet" href="temp.css" />
+    <!-- <script src="temp.js"></script> -->
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container swiper">
+      <div class="nav-buttons">
+        <input type="radio" name="dot" id="one" />
+        <input type="radio" name="dot" id="two" />
+        <div class="deal-button">
+          <label for="one" class="active one">
+            <div class="img">
+              <img src="img/arrow.svg" alt="" />
+            </div>
+          </label>
+          <label for="two" class="two">
+            <div class="img">
+              <img src="img/arrow.svg" alt="" />
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="main-card">
+        <div class="cards swiper-wrapper">
+          <div class="card swiper-slide">
+            <!-- <div class="img"> -->
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179294750.jpg"
+              alt=""
+            />
+            <!-- </div> -->
+          </div>
+          <div class="card swiper-slide">
+            <!-- <div class="img"> -->
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179360286.jpg"
+              alt=""
+            />
+            <!-- </div> -->
+          </div>
+          <div class="card swiper-slide">
+            <!-- <div class="img"> -->
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179425822.jpg"
+              alt=""
+            />
+            <!-- </div> -->
+          </div>
+          <div class="card swiper-slide">
+            <!-- <div class="img"> -->
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179491358.jpg"
+              alt=""
+            />
+            <!-- </div> -->
+          </div>
+          <div class="card swiper-slide">
+            <!-- <div class="img"> -->
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179491358.jpg"
+              alt=""
+            />
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div> -->
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <script>
+      var swiper = new Swiper(".main-card", {
+        slidesPerView: 4,
+        spaceBetween: 25,
+        loop: true,
+        // centerSlide: "true",
+        fade: "true",
+        grabCursor: "true",
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        //   dynamicBullets: true,
+        // },
+        navigation: {
+          nextEl: ".one",
+          prevEl: ".two",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+          950: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
