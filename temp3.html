@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 1361px;
+        height: 426px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      /* .swiper-pagination {
+        height: auto;
+        width: 100px;
+        text-align: end;
+        margin-bottom: 30px;
+        margin-right: 70px;
+      } */
+      .swiper-button-next,
+      .swiper-button-prev {
+        background-color: #d8d8d8;
+        padding: 8px 16px;
+        border-radius: 100%;
+        /* border: 2px solid black; */
+        color: black;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      /* .swiper-pagination-bullet {
+        border: 1px solid white;
+        background-color: white;
+      } */
+      .swiper-button-prev:after,
+      .swiper-button-next:after {
+        --swiper-navigation-size: 15px;
+      }
+      .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        width: auto;
+        bottom: 50px;
+        left: 1150px;
+      }
+      span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: white;
+        opacity: 1;
+      }
+
+      /* target all bullets */
+      .swiper-pagination-bullet {
+        border: 1px solid white;
+        background-color: transparent;
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div data-hash="slide1" class="swiper-slide">
+          <img
+            src="https://assets.tatacliq.com/medias/sys_master/images/50504080326686.jpg"
+            alt=""
+          />
+        </div>
+        <div data-hash="slide2" class="swiper-slide">
+          <img
+            src="https://assets.tatacliq.com/medias/sys_master/images/50504080392222.jpg"
+            alt=""
+          />
+        </div>
+        <div data-hash="slide3" class="swiper-slide">
+          <img
+            src="https://assets.tatacliq.com/medias/sys_master/images/50504080457758.jpg"
+            alt=""
+          />
+        </div>
+        <div data-hash="slide4" class="swiper-slide">
+          <img
+            src="https://assets.tatacliq.com/medias/sys_master/images/50504080523294.jpg"
+            alt=""
+          />
+        </div>
+        <div data-hash="slide5" class="swiper-slide">
+          <img
+            src="https://assets.tatacliq.com/medias/sys_master/images/50504080883742.jpg"
+            alt=""
+          />
+        </div>
+        <div data-hash="slide6" class="swiper-slide">
+          <img
+            src="https://assets.tatacliq.com/medias/sys_master/images/50504081145886.jpg"
+            alt=""
+          />
+        </div>
+        <div data-hash="slide7" class="swiper-slide">
+          <img
+            src="https://assets.tatacliq.com/medias/sys_master/images/50504081211422.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 3000,
+        },
+        hashNavigation: {
+          watchState: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
