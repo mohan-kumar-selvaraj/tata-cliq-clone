@@ -3,7 +3,14 @@
   src: url("assets//rubik-v20-latin-regular.woff2") format("woff2");
   /* You can specify other formats like woff, ttf, etc. for better browser compatibility */
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  height: 100px;
+}
 body {
   background-color: #ececec;
 }
