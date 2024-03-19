@@ -1,47 +1,3 @@
-/* #navContainer {
-  width: 100%;
-  height: 100px;
-  background-color: #212121;
-  display: flex;
-  font-family: sans-serif;
-  position: fixed;
-  top: 0;
-
-  margin: 0;
-  padding: 0;
-  left: 0;
-}
-.navMiddle {
-  width: 100%;
-  height: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding-left: 185px;
-  position: relative;
-}
-
-.logoHolder {
-  width: 85px;
-  height: 55px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: url(Images/group.svg) no-repeat;
-  background-size: auto 40px;
-  background-position: center;
-  cursor: pointer;
-  transition: 200ms;
-}
-
-.navTopRight {
-  width: 1000px;
-  height: 40px;
-  background: black;
-  padding: 0 0 020px;
-} */
-
 @font-face {
   font-family: "regular";
   src: url("assets//rubik-v20-latin-regular.woff2") format("woff2");
@@ -50,6 +6,10 @@
 
 body {
   background-color: #ececec;
+}
+.mySwiper {
+  top: 100px;
+  cursor: pointer;
 }
 #nav {
   /* width:100%; */
@@ -62,10 +22,11 @@ body {
 .categories {
   display: flex;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 140px;
   margin-bottom: 40px;
   margin-left: 10px;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 .categories > div {
   /* border:1px solid red; */
@@ -342,9 +303,30 @@ img {
 .main-card11,
 .main-card12,
 .main-card13 {
-  margin: 0 40px;
+  margin: 0 20px;
+  padding: 20px;
   overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 25px;
+}
+.cards {
+  height: auto;
+  width: auto;
+}
+.main-card2:hover {
+  height: auto;
+  width: auto;
+  border: none;
+}
+
+.cards:hover {
+  height: auto;
+  width: auto;
+  border: none;
+}
+
+.cards img:hover {
+  box-shadow: none !important;
 }
 
 .card {
@@ -352,6 +334,7 @@ img {
   border-radius: 25px;
   width: 236px;
   height: 321px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card img {
@@ -365,7 +348,7 @@ img {
 
 .card:hover {
   transform: scale(1.025);
-  transition: transform 0.3s;
+  border: none !important;
 }
 
 .nav-buttons,

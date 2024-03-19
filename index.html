@@ -52,9 +52,9 @@
                 <span
                   id="signInText"
                   class="loginBtn"
-                  style="cursor: pointer; padding: 10px 0"
-                  >Sign in/Sign Up</span
-                >
+                  style="cursor: pointer; padding: 10px 0">
+                  Sign in/Sign Up
+                  </span>
                 <span id="profileIcon" class="loginBtn" style="display: none">
                   <i class="fa-solid fa-circle-user"></i>&nbsp;&nbsp;&nbsp;
                   <i class="fa-solid fa-angle-down"></i>
@@ -63,19 +63,16 @@
                 <div class="loginDropdown-content">
                   <span><i class="fa-solid fa-sort-up"></i></span>
                   <!-- <p id="arrow"></p> -->
-                  <button id="loginBtn" onclick="openNav()">
+                  <button id="loginBtn" >
                     Login/ Register
                   </button>
                   <p>
-                    <a href="#"
-                      ><i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbsp;My
-                      account</a
-                    >
+                    <a href="#"><i class="fa-regular fa-circle-user"></i>
+                      &nbsp;&nbsp;&nbsp;My account</a>
                   </p>
                   <p>
                     <a href="#"
-                      ><i class="fa-solid fa-bag-shopping"></i
-                      >&nbsp;&nbsp;&nbsp;Order History</a
+                      ><img src="img/navbar/order-history.svg" style="width: 13%;height: 13%;" alt="">&nbsp;&nbsp;&nbsp;Order History</a
                     >
                   </p>
                   <p>
@@ -2019,5 +2016,22 @@
   <script src="brands.js"></script>
 
   <script src="nav.js"></script>
+  <script>
+    const logo = document.querySelector(".logoHolder")
+    const nav = document.getElementById("navContainer")
+    let oldScrollY = window.scrollY;
+    window.onscroll = function(e) {
+      if(oldScrollY > window.scrollY){
+        // console.log(oldScrollY + " " + window.scrollY + " 1");
+        logo.classList.remove("scroll_logo")
+          navContainer.style.transform = "translateY(0px)"
+        } else {
+          // console.log(oldScrollY + " " + window.scrollY + " 2");
+          logo.classList.add("scroll_logo");
+          navContainer.style.transform = "translateY(-40px)"
+        }
+        oldScrollY = window.scrollY;
+      }
+</script>
   </body>
 </html>

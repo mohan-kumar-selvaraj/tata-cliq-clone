@@ -11,17 +11,28 @@ body {
 #navContainer {
   width: 100%;
   height: 100px;
+  position: relative;
   background-color: #212121;
   display: flex;
   font-family: "semibold";
-  position: sticky;
-  top: 0;
+  position: fixed;
   z-index: 2;
+  transition: all 500ms;
 }
 
 #navContainer > div:nth-child(1) {
   width: 6%;
 }
+
+.logoHolder {
+  transition: all 500ms;
+}
+
+.scroll_logo {
+  scale: 0.75;
+  transform: translateY(20px);
+}
+
 #blockshowCat,
 #blockshow {
   background-color: white;
@@ -259,8 +270,11 @@ body {
   width: 20px;
   height: 80px;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
-
+.bottomMiddleSection > div:nth-child(3) > div > img:hover {
+  transform: scale(1.5);
+}
 /****************** Categories Dropdown styling STARTS here **************************/
 .dropbtn {
   width: 50%;
@@ -532,14 +546,16 @@ hr {
 
 .loginDropdown-content a {
   text-decoration: none;
-  color: black;
-  font-size: 15px;
+  /* color: black; */
+  color: #212121;
+  font-size: 14px;
 }
 
 #loginBtn {
   border: none;
   border-radius: 20px;
-  background-color: red;
+  /* background-color: red; */
+  background-color: #ff1744;
   color: white;
   padding: 10px 16px;
   margin-bottom: 10px;
