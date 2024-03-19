@@ -207,6 +207,8 @@ img {
 }
 #last-2nd > div > div {
   margin: auto;
+  /* background-color: red; */
+
   /* border:1px solid red; */
 }
 #last-2nd > div:nth-child(1) > div:nth-child(1) {
@@ -289,7 +291,7 @@ img {
   background-color: #ffffff;
 }
 #last > p {
-  margin: 0px 70px 0px 80px;
+  margin: 0px 70px 20px 80px;
   font-size: 14.2px;
   line-height: 20px;
   font-family: sans-serif;
