@@ -105,6 +105,7 @@
 .swiper-button-next:after {
   --swiper-navigation-size: 15px;
 }
+
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,

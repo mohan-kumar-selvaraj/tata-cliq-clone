@@ -1,13 +1,11 @@
 @font-face {
   font-family: "semibold";
   src: url("assets/rubik-v7-latin-500.woff2") format("woff2");
-  /* You can specify other formats like woff, ttf, etc. for better browser compatibility */
 }
 body {
   margin: 0px 0;
 }
 
-/* Header Section Navbar basic container styles */
 #navContainer {
   width: 100%;
   height: 100px;
@@ -38,11 +36,11 @@ body {
   background-color: white;
 }
 
-/* Navbar Section Area */
+/*************** Navbar Section Area **********/
 #navContainer > div:nth-child(2) {
   width: 88%;
 }
-/* ********************** */
+/* ****************************************** */
 
 #navContainer > div:nth-child(3) {
   width: 6%;
@@ -188,6 +186,23 @@ body {
   height: 60px;
   display: flex;
   color: white;
+}
+
+.bottomMiddleSection .dropdown i {
+  /* background-color: red; */
+  transition: transform 0.3s;
+}
+
+.bottomMiddleSection .dropdown i :hower {
+  transform: rotate(-180deg);
+}
+.bottomMiddleSection .dropdown_Br i {
+  /* background-color: red; */
+  transition: transform 0.3s;
+}
+
+.bottomMiddleSection .dropdown_Br i :hower {
+  transform: rotate(-180deg);
 }
 
 /* Categories and Brands Style Section  */
